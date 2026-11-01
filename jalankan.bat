@@ -1,5 +1,5 @@
 @echo off
-REM Menjalankan 6S di QEMU (Windows). Ubah path jika QEMU diinstal di folder lain.
+REM Menjalankan A6 di QEMU (Windows). Ubah path jika QEMU diinstal di folder lain.
 set QEMU="C:\Program Files\qemu\qemu-system-i386.exe"
-%QEMU% -kernel 6s.elf
+%QEMU% -kernel a6.elf
 pause

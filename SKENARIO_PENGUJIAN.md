@@ -1,6 +1,6 @@
-# 6S (Operating Six) - Skenario Pengujian
+# A6 - Skenario Pengujian
 
-Setelah boot muncul logo "6S" dan prompt `root@6s#`. Ketik `skenario` untuk melihat peta ringkas di dalam OS.
+Setelah boot muncul logo "A6" dan prompt `root@a6#`. Ketik `skenario` untuk melihat peta ringkas di dalam OS.
 Setiap demo otomatis membersihkan layar dulu, jadi hasilnya muat satu layar. Ambil screenshot SETELAH tiap
 skenario selesai (untuk Bab III laporan).
 
@@ -14,7 +14,7 @@ Pengguna: OS mulai sebagai root. `masuk guest` = pindah ke user biasa, `masuk ro
 ## 1. Bootstrapping & CLI
 Perintah: `bantuan`, `tentang`, `waktu`   (juga `skenario`, `proses`, dll. = lebih dari 3 perintah buatan sendiri)
 Yang terlihat: logo ASCII, baris [ OK ] tiap komponen, prompt, lalu hasil tiap perintah.
-Alur: QEMU memuat 6s.elf ke RAM (multiboot) -> `_start` di boot.S -> `kmain()` menyalakan GDT, IDT, PIC, heap,
+Alur: QEMU memuat a6.elf ke RAM (multiboot) -> `_start` di boot.S -> `kmain()` menyalakan GDT, IDT, PIC, heap,
 scheduler, RAMDisk, timer -> `shell_main()` membaca keyboard.
 Lulus bila: OS boot di QEMU dan >= 3 perintah berjalan.
 
